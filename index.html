@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Nagita</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white"></body>
+
+  <!-- ======== NAVBAR ======== -->
+  <nav class="fixed w-full bg-white shadow-md z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold t</div>
+      <ul class="hidden md:flex space-x-6 font-medium">
+        <li><a href="#home" class="hover:text-indigo-600 transition">Home</a></li>
+        <li><a href="#about" class="hover:text-indigo-600 transition">About</a></li>
+        <li><a href="#skills" class="hover:text-indigo-600 transition">Skills</a></li>
+        <li><a href="#portfolio" class="hover:text-indigo-600 transition">Portfolio</a></li>
+        <li><a href="#contact" class="hover:text-indigo-600 transition">Contact</a></li>
+    </div>
+
+</nav>
+    <!-- Menu Mobile -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t text-center">
+      <a href="#home" class="block py-2 hover:bg-gray-100">Home</a>
+      <a href="#about" class="block py-2 hover:bg-gray-100">About</a>
+      <a href="#skills" class="block py-2 hover:bg-gray-100">Skills</a>
+      <a href="#portfolio" class="block py-2 hover:bg-gray-100">Portfolio</a>
+      <a href="#contact" class="block py-2 hover:bg-gray-100">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ======== HERO SECTION ======== -->
+  <section id="home" class="min-h-screen flex flex-col md:flex-row justify-center items-center px-6 pt-24 bg-gray-50">
+    <div class="md:w-1/2 text-center md:text-left animate-fadeInUp">
+      <h1 class="text-5xl font-bold mb-4">Halo, Saya <span class="text-indigo-600"> Nagita </span></h1>
+      <p class="text-gray-600 mb-6">Saya seorang web developer yang berfokus pada desain modern dan fungsional. Saya senang membangun website yang menarik dan responsif.</p>
+      <a href="#portfolio" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition">Lihat Karya Saya</a>
+    </div>
+    <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center animate-fadeIn">
+      <img src="assets/images/hero.png" alt="Ilustrasi" class="w-80 md:w-96 rounded-lg shadow-lg">
+    </div>
+  </section>
+
+  <!-- ======== ABOUT SECTION ======== -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center md:text-left">
+      <h2 class="text-4xl font-bold text-center mb-10">Tentang Saya</h2>
+      <div class="flex flex-col md:flex-row items-center gap-10">
+        <img src="assets/images/profile.jpg" alt="Foto Profil" class="w-48 h-48 rounded-full shadow-lg mx-auto md:mx-0">
+        <div class="md:w-2/3 animate-fadeInUp">
+          <p class="text-gray-700 leading-relaxed mb-4">
+          Saya tidak pernah menyangka bahwa saya akan memilih jurusan Teknik Informatika. 
+          Sejujurnya, dunia teknologi dan pemrograman dulu terasa cukup asing bagi saya. 
+          Namun, sejak mulai mengenalnya, saya justru menemukan banyak hal menarik di dalamnya.
+            </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SKILLS SECTION ======== -->
+  <section id="skills" class="py-20 bg-gray-50">
+    <h2 class="text-4xl font-bold text-center mb-10">Keahlian Saya</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center max-w-5xl mx-auto px-6">
+      <div class="p-6 bg-white rounded-lg shadow hover:scale-105 transition animate-fadeInUp">
+        <img src="assets/images/html.png" class="w-16 mx-auto mb-3" alt="HTML">
+        <h3 class="font-semibold text-lg">HTML</h3>
+      </div>
+      <div class="p-6 bg-white rounded-lg shadow hover:scale-105 transition animate-fadeInUp">
+        <img src="assets/images/css.png" class="w-16 mx-auto mb-3" alt="CSS">
+        <h3 class="font-semibold text-lg">CSS</h3>
+      </div>
+      <div class="p-6 bg-white rounded-lg shadow hover:scale-105 transition animate-fadeInUp">
+        <img src="assets/images/js.png" class="w-16 mx-auto mb-3" alt="JavaScript">
+        <h3 class="font-semibold text-lg">JavaScript</h3>
+      </div>
+      <div class="p-6 bg-white rounded-lg shadow hover:scale-105 transition animate-fadeInUp">
+        <img src="assets/images/tailwind.png" class="w-16 mx-auto mb-3" alt="Tailwind CSS">
+        <h3 class="font-semibold text-lg">Tailwind CSS</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== PORTFOLIO SECTION ======== -->
+  <section id="portfolio" class="py-20 bg-white">
+    <h2 class="text-4xl font-bold text-center mb-10">Portofolio</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 max-w-6xl mx-auto">
+
+      <!-- Project Card -->
+      <div class="bg-gray-100 rounded-lg overflow-hidden shadow hover:scale-105 transition">
+        <img src="assets/images/project1.jpg" alt="Project 1" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-xl mb-2">Project 1</h3>
+          <p class="text-gray-600">Website sederhana yang menampilkan profil pribadi, pengalaman, dan kontak (seperti tugas portofolio ini).</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-100 rounded-lg overflow-hidden shadow hover:scale-105 transition">
+        <img src="assets/images/project2.jpg" alt="Project 2" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-xl mb-2">Project 2</h3>
+          <p class="text-gray-600">Deskripsi singkat project ini.</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-100 rounded-lg overflow-hidden shadow hover:scale-105 transition">
+        <img src="assets/images/project3.jpg" alt="Project 3" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-xl mb-2">Project 3</h3>
+          <p class="text-gray-600">Deskripsi singkat project ini.</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-100 rounded-lg overflow-hidden shadow hover:scale-105 transition">
+        <img src="assets/images/project4.jpg" alt="Project 4" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-xl mb-2">Project 4</h3>
+          <p class="text-gray-600">Deskripsi singkat project ini.</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-100 rounded-lg overflow-hidden shadow hover:scale-105 transition">
+        <img src="assets/images/project5.jpg" alt="Project 5" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-xl mb-2">Project 5</h3>
+          <p class="text-gray-600">Deskripsi singkat project ini.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CONTACT SECTION ======== -->
+  <section id="contact" class="py-20 bg-gray-50">
+    <h2 class="text-4xl font-bold text-center mb-10">Hubungi Saya</h2>
+    <form class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow">
+      <input type="text" placeholder="Nama" class="w-full border border-gray-300 p-3 rounded mb-4 focus:outline-indigo-500">
+      <input type="email" placeholder="Email" class="w-full border border-gray-300 p-3 rounded mb-4 focus:outline-indigo-500">
+      <textarea placeholder="Pesan" class="w-full border border-gray-300 p-3 rounded mb-4 focus:outline-indigo-500"></textarea>
+      <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded hover:bg-indigo-700 transition">Kirim</button>
+    </form>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="text-center py-6 bg-white border-t">
+    <p class="text-gray-600">© 2025 Nagita.</p>
+  </footer>
+
+  <!-- ======== SCRIPT NAVBAR MOBILE ======== -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
